@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>sy9-2</title>
+		
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		ul{
+			margin-left:100px;
+			margin-top:100px;
+		}
+		li{
+			list-style: none;
+			float:left;
+		}
+		input{
+			display:none;
+			position: absolute;
+			
+		}
+		label{
+			display:block;
+			width:87px;
+			height:34px;
+			background: limegreen;
+			text-align: center;
+			font-size: 20px;
+		}
+		div{
+			background: lightgreen;
+			position:absolute;
+			left:80px;
+			top:134px;
+			width:450px;
+			height:200px;
+			padding:25px;
+		}
+		p{
+			font-size: 25px;
+			margin-top:10px;
+		}
+		label:hover{
+			cursor: pointer;
+			background: #90EE90;
+		}
+		input:checked+label{ /*紧跟checked之后的label*/
+			position:relative;
+			top:-5px;
+			height:50px;
+			background: #90EE90;
+		}
+		input:checked~div{
+			z-index: 2;
+		}
+	</style>
+	</head>
+<body>
+	<ul>
+		<li>
+			<input type='radio' checked="checked" name='tab' id='tab1'>
+			<label for='tab1'>要闻</label>
+			<div>
+				<p>11111111111111111111</p>
+				<p>11111111111111111111</p>
+				<p>11111111111111111111</p>
+				<p>11111111111111111111</p>
+			</div>
+		</li>
+		<li>
+			<input type='radio'  name='tab' id='tab2'>
+			<label for='tab2'>时政</label>
+			<div>
+				<p>22222222222222222222</p>
+				<p>22222222222222222222</p>
+				<p>22222222222222222222</p>
+				<p>22222222222222222222</p>
+			</div>
+		</li>
+		<li>
+			<input type='radio'  name='tab' id='tab3'>
+			<label for='tab3'>文化</label>
+			<div>
+				<p>333333333333333333333</p>
+				<p>333333333333333333333</p>
+				<p>333333333333333333333</p>
+				<p>333333333333333333333</p>
+			</div>
+		</li>
+	</ul>
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
